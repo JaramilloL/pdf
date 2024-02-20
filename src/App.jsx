@@ -1,6 +1,7 @@
 //para poder descargar el archivo de pdf creado necesitamos llamara una funcion de react-pdf
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
 import PdfDocument from './components/PdfDocument'
+import JsPdf from './components/JsPdf'
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
         }
       </PDFDownloadLink>
 
+        <hr/>
+        <h3>New PDF</h3>
+        <JsPdf/>
     </div>
   )
 }
